@@ -74,7 +74,7 @@ export default function Nav() {
             className="flex justify-between py-5 px-2 text-xl items-center m-auto "
           >
             <p className=" font-bold text-primary-100 text-2xl text-center">
-              Ivan Hughes
+              Esmeralda Lopez Colli
             </p>
             <div onClick={() => handleOpenMenu()}>
               <FaBars size={30} />
@@ -99,7 +99,7 @@ export default function Nav() {
                 Home{" "}
               </p>
             </Link>
-            {/* <Link to="/">
+            <Link to="/">
               <p className="m-2" onClick={() => handleCloseMenu()}>
                 Sobre mi
               </p>
@@ -108,7 +108,7 @@ export default function Nav() {
               <p className="m-2" onClick={() => handleCloseMenu()}>
                 Contacto
               </p>
-            </Link> */}
+            </Link>
           </div>
         </div>
       )}
