@@ -13,7 +13,7 @@ const useFlickrApiGallery = ({ albumId }: useFlickrApi) => {
     url_h: string;
   }
 
-  // const [photos, setPhotos] = useState<Photo[]>([]);
+  const [photos, setPhotos] = useState<Photo[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -26,8 +26,8 @@ const useFlickrApiGallery = ({ albumId }: useFlickrApi) => {
 
         if (response.ok) {
           const data = await response.json();
-          console.log(data);
-          // setPhotos(data.photoset.photo);
+
+          setPhotos(data.photoset.photo);
           setIsLoading(false);
         } else {
           throw new Error("Network response was not ok.");
