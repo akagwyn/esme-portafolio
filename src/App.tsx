@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./Nav";
 import "react-photo-view/dist/react-photo-view.css";
 
-const SashaEter = lazy(() => import("./Albums/SashaEter"));
+const Esme = lazy(() => import("./Albums/Esme"));
 const Contacto = lazy(() => import("./Contacto"));
 const SobreMi = lazy(() => import("./SobreMi"));
 
@@ -19,7 +19,7 @@ export default function App() {
         }
       >
         <Routes>
-          <Route path="/" element={<SashaEter />} />
+          <Route path="/" element={<Esme />} />
           <Route path="/contacto" element={<Contacto />}></Route>
           <Route path="/sobre-mi" element={<SobreMi />}></Route>
         </Routes>
