@@ -26,9 +26,13 @@ const useFlickrApiGallery = ({ albumId }: useFlickrApi) => {
 
         if (response.ok) {
           const data = await response.json();
-          console.log(data.photoset.photo);
-          setPhotos(data.photoset.photo);
-          setIsLoading(false);
+          if (data.photoset && data.photoset.photo) {
+            setPhotos(data.photoset.photo);
+            setIsLoading(false);
+            console.log("bueno paso por esta parte");
+          } else {
+            console.error("Unexpected or missing photo data in API response.");
+          }
         } else {
           throw new Error("Network response was not ok.");
         }
