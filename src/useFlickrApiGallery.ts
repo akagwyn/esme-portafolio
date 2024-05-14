@@ -26,7 +26,6 @@ const useFlickrApiGallery = ({ albumId }: useFlickrApi) => {
 
         if (response.ok) {
           const data = await response.json();
-          console.log(data);
           setPhotos(data.photoset.photo);
           setIsLoading(false);
         } else {
