@@ -56,14 +56,14 @@ export default function Nav() {
             >
               Contacto
             </Link>
-            <Link
+            {/* <Link
               to="https://www.instagram.com/ivan.gwyn/"
               target="_blank"
               className="px-2"
               onClick={() => handleCloseMenu()}
             >
               Instagram
-            </Link>
+            </Link> */}
           </li>
         </ul>
       )}
@@ -99,7 +99,7 @@ export default function Nav() {
                 Home{" "}
               </p>
             </Link>
-            <Link to="/">
+            {/* <Link to="/">
               <p className="m-2" onClick={() => handleCloseMenu()}>
                 Sobre mi
               </p>
@@ -108,12 +108,7 @@ export default function Nav() {
               <p className="m-2" onClick={() => handleCloseMenu()}>
                 Contacto
               </p>
-            </Link>
-            <Link to="https://www.instagram.com/ivxnbelike/" target="_blank">
-              <p className="m-2" onClick={() => handleCloseMenu()}>
-                Instagram
-              </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}
