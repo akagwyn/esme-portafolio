@@ -26,7 +26,8 @@ const useFlickrApiGallery = ({ albumId }: useFlickrApi) => {
 
         if (response.ok) {
           const data = await response.json();
-          setPhotos(data.photoset.photo?);
+          console.log(data.photoset.photo);
+          setPhotos(data.photoset.photo);
           setIsLoading(false);
         } else {
           throw new Error("Network response was not ok.");
@@ -40,6 +41,7 @@ const useFlickrApiGallery = ({ albumId }: useFlickrApi) => {
   }, [albumId]);
 
   return { photos, isLoading };
+  console.log(photos);
 };
 
 export default useFlickrApiGallery;
