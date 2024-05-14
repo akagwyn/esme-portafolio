@@ -9,16 +9,16 @@ export default function Gallery({ albumId }: FlickrGallery) {
     id: number;
   }
 
-  const skeleton: Skeleton[] = Array.from({ length: 18 }, (_, index) => ({
+  const skeleton: Skeleton[] = Array.from({ length: 5 }, (_, index) => ({
     id: index + 1,
   }));
 
   if (isLoading) {
     return (
-      <main className="grid grid-cols-1 gap-1 md:gap-1 lg:grid-cols-6 md:grid-cols-4">
+      <main className="grid grid-cols-1 gap-1 md:gap-3 md:grid-cols-3">
         {skeleton.map((i) => (
           <div
-            className="w-screen h-[500px] md:h-[350px] md:w-full bg-zinc-300 animate-pulse"
+            className="h-[500px] md:h-[850px] md:w-full bg-zinc-300 animate-pulse"
             key={i.id}
           />
         ))}

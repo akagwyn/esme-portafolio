@@ -26,7 +26,7 @@ export default function App() {
       </Suspense>
 
       <footer className="text-center py-5 text-xs font-light text-zinc-500">
-        Diseñado y hecho por Ivan Gwyn Hughes
+        Diseñado por Ivan Gwyn Hughes
       </footer>
     </div>
   );
