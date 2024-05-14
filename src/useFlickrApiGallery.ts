@@ -26,7 +26,7 @@ const useFlickrApiGallery = ({ albumId }: useFlickrApi) => {
 
         if (response.ok) {
           const data = await response.json();
-          setPhotos(data.photoset?.photo);
+          setPhotos(data.photoset.photo?);
           setIsLoading(false);
         } else {
           throw new Error("Network response was not ok.");
